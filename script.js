@@ -12,6 +12,9 @@ const getSum = () => {
          total+=val;
 		}
 	});
+
+	 const table = document.querySelector('table');
+	
   const newRow=document.createElement('tr');
   newRow.classList.add('total-row');
 	const labelCell=document.createElement('td');
