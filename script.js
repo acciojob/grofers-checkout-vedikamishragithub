@@ -14,19 +14,25 @@ const getSum = () => {
 	});
 
  const table = document.querySelector('table');
+
+
+ let totalRow=table.querySelector('.total-row');
 	
-  const newRow=document.createElement('tr');
-  newRow.classList.add('total-row');
+	if(!totalRow){ 
+	const newRow=document.createElement('tr');
+    newRow.classList.add('total-row');
 	const labelCell=document.createElement('td');
 	labelCell.textContent="Total";
 	const valueCell=document.createElement('td');
 	valueCell.textContent=total;
+		
 	newRow.appendChild(labelCell);
 	newRow.appendChild(valueCell);
 	table.appendChild(newRow);
-	
-	
-	
+	}else{
+        const valueCell = totalRow.querySelector('.total-value');
+        valueCell.textContent = total;
+	}
    	 
 };
 
