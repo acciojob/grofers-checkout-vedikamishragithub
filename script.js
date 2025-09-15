@@ -13,7 +13,7 @@ const getSum = () => {
 		}
 	});
 
-	 const table = document.querySelector('table');
+ const table = document.querySelector('table');
 	
   const newRow=document.createElement('tr');
   newRow.classList.add('total-row');
