@@ -25,6 +25,7 @@ const getSum = () => {
 	labelCell.textContent="Total";
 	const valueCell=document.createElement('td');
 	valueCell.textContent=total;
+    valueCell.id = 'ans';
 		
 	newRow.appendChild(labelCell);
 	newRow.appendChild(valueCell);
